@@ -6,8 +6,12 @@ import (
 )
 
 func TestGetParsable(t *testing.T) {
-	parsableNames := [3]string{
+	parsableNames := [7]string{
 		"aws_iam_user",
+		"aws_instance",
+		"aws_security_group",
+		"aws_subnet",
+		"aws_vpc",
 		"onelogin_users",
 		"onelogin_apps",
 		// add parsables by provider_resourceName here

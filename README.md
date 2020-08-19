@@ -22,6 +22,11 @@ This is especially useful if you are running `terraform import` and want to conv
 
 e.g. on mac its usually `/usr/bin/` or `/usr/local/bin` as long as that folder is on your $PATH
 
+## Example
+An example `terraform.tfstate` file has been given to demonstrate what will happen. If you installed the app correctly, running `tfrewind` from this directory with the provided example, you should get an output `main.tf` that looks like the provided `main_example.tf`.
+
+If you were to `terraform import` your own resources prior to running this, you'd get a proper `main.tf`.
+
 ## Contribute
 
 I started this thinking it'd be cool to add some functionality to my Terraform workflow and as such I haven't added everything under the sun, but if there's a resource you need imported, please add it.
@@ -34,5 +39,9 @@ case "<your_parsable>":
   imf.parsables[parsableType] = &<your_parsable>{}
 ```
 
-## Supported Versions
-Currently supports only `v0.12.xx` with plans to support `v0.13.xx`.
+## Supported Terraform Versions
+Currently supports only `v0.12.xx`
+
+## Planned Updates
+Support Terraform `v0.13.xx`.
+Automatic imports based on providers' `list resources` APIs 
